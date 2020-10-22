@@ -14,14 +14,24 @@ export const Form: React.FC = () => (
   <Wrapper>
     <form>
       <Label htmlFor="name">What's your full, legal name?</Label>
-      <TextInput type="text" placeholder="Homer Simpson" id="name" />
+      <TextInput
+        type="text"
+        placeholder="Homer Simpson"
+        id="name"
+        name="name"
+      />
       <ValidationFeedback
         message="This field is required"
         helper="Please provide your full name"
       />
 
       <Label htmlFor="email">What's your email address?</Label>
-      <TextInput type="email" placeholder="homer@example.com" id="email" />
+      <TextInput
+        type="email"
+        placeholder="homer@example.com"
+        id="email"
+        name="email"
+      />
       <ValidationFeedback
         message="This is not a valid email address"
         helper="Enter your email, making it sure has an @ and a dot"
@@ -40,7 +50,14 @@ export const Form: React.FC = () => (
       <Label htmlFor="height" hint="(between 150cm and 200cm)">
         How tall are you?
       </Label>
-      <TextInput type="text" placeholder="175" suffix="cm" id="height" />
+      <TextInput
+        type="text"
+        placeholder="175"
+        suffix="cm"
+        id="height"
+        name="height"
+        pattern="[0-9]+"
+      />
       <ValidationFeedback message="Please enter a height between 150cm and 200cm" />
 
       <Button type="submit">Submit Application</Button>

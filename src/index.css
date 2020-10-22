@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Shapiro";
+  font-weight: normal;
+  src: url("/fonts/Shapiro-45-Welter-Text.woff") format("woff"),
+    url("/fonts/Shapiro-45-Welter-Text.ttf") format("ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Shapiro";
+  font-weight: bold;
+  src: url("/fonts/Shapiro-75-Heavy-Text.woff") format("woff"),
+    url("/fonts/Shapiro-75-Heavy-Text.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Shapiro Wide";
+  font-weight: normal;
+  src: url("/fonts/Shapiro-65-Light-Heavy-Wide.woff") format("woff"),
+    url("/fonts/Shapiro-65-Light-Heavy-Wide.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Shapiro Wide";
+  font-weight: bold;
+  src: url("/fonts/Shapiro-85-Super-Heavy-Extd.woff") format("woff"),
+    url("/fonts/Shapiro-85-Super-Heavy-Extd.ttf") format("ttf");
+}
+
+body {
+  margin: 0;
+  font-family: Shapiro, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 26px;
 }
